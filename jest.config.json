@@ -1,0 +1,31 @@
+{
+    "setupFiles": [
+        "<rootDir>/src/setupTests.js"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+        "src/**/*.tsx",
+        "!src/index.tsx",
+        "!src/serviceWorker.js",
+        "!src/components/**/*.stories.tsx",
+        "!<rootDir>/src/registerServiceWorker.js",
+        "!<rootDir>/src/serviceWorker.js",
+        "!<rootDir>/node_modules/"
+    ],
+    "coverageReporters": [
+        "lcov"
+    ],
+    "coverageThreshold": {
+        "global": {
+            "branches": 0,
+            "functions": 0,
+            "lines": 0,
+            "statements": 0
+        }
+    },
+    "moduleDirectories": [
+        "node_modules",
+        "src"
+    ]
+}
